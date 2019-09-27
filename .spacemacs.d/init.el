@@ -40,22 +40,25 @@ This function should only modify configuration layer settings."
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     (auto-completion :variable
-                      auto-completion-enable-snippets-in-popup t
-                      :package (not yasnippet-snippets))
-     bibtex
+     (auto-completion :variable auto-completion-enable-snippets-in-popup t)
      ;; better-defaults
      (c-c++ :variables
             c-c++-default-mode-for-headers 'c++-mode
             c-c++-enable-clang-format-on-save t
             c-c++-backend 'lsp-ccls
+            c-c++-lsp-cache-dir (file-truename "~/.cache/ccls")
             )
-     chinese
+     (chinese :variables
+              chinese-enable-fcitx t
+              chinese-fcitx-use-dbus t
+              chinese-enable-avy-pinyin nil)
      (cmake :variables cmake-enable-cmake-ide-support t)
      dap
      emacs-lisp
      git
      graphviz
+     (html :variables web-fmt-tool 'prettier) 
+     (json :variables json-fmt-tool 'prettier)
      latex
      markdown
      org
@@ -69,6 +72,7 @@ This function should only modify configuration layer settings."
      ;; spell-checking
      syntax-checking
      (version-control :variables version-control-diff-side 'left)
+     yaml
      )
 
    ;; List of additional packages that will be installed without being
@@ -84,7 +88,7 @@ This function should only modify configuration layer settings."
    dotspacemacs-frozen-packages '()
 
    ;; A list of packages that will not be installed and loaded.
-   dotspacemacs-excluded-packages '()
+   dotspacemacs-excluded-packages '(yasnippet-snippets)
 
    ;; Defines the behaviour of Spacemacs when installing packages.
    ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
