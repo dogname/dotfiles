@@ -128,6 +128,7 @@ assign [class="Emacs"] $ws2
 assign [class="Zathura"] $ws3
 assign [class="Zotero"] $ws4
 assign [class="Code"] $ws5
+assign [class="code"] $ws5
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
