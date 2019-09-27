@@ -42,7 +42,7 @@ BinPackArguments: true
 # false表示所有形参要么都在同一行，要么都各自一行
 BinPackParameters: true
 # 大括号换行，只有当BreakBeforeBraces设置为Custom时才有效
-BraceWrapping:    
+BraceWrapping:
   # class定义后面
   AfterClass: true
   # 控制语句后面
@@ -75,13 +75,13 @@ BreakBeforeBraces: Custom
 # 在三元运算符前换行
 BreakBeforeTernaryOperators: true
 # 在构造函数的初始化列表的逗号前换行
-BreakConstructorInitializersBeforeComma: true
+BreakConstructorInitializersBeforeComma: false
 # 每行字符的限制，0表示没有限制
-ColumnLimit: 200
+ColumnLimit: 120
 # 描述具有特殊意义的注释的正则表达式，它不应该被分割为多行或以其它方式改变
 CommentPragmas: '^ IWYU pragma: '
 # 构造函数的初始化列表要么都在同一行，要么都各自一行
-ConstructorInitializerAllOnOneLineOrOnePerLine: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
 # 构造函数的初始化列表的缩进宽度
 ConstructorInitializerIndentWidth: 4
 # 延续的行的缩进宽度
@@ -98,7 +98,7 @@ ExperimentalAutoDetectBinPacking: false
 ForEachMacros: [ foreach, Q_FOREACH, BOOST_FOREACH ]
 # 对#include进行排序，匹配了某正则表达式的#include拥有对应的优先级，匹配不到的则默认优先级为INT_MAX(优先级越小排序越靠前)，
 #   可以定义负数优先级从而保证某些#include永远在最前面
-IncludeCategories:  
+IncludeCategories:
   - Regex: '^"(llvm|llvm-c|clang|clang-c)/'
     Priority: 2
   - Regex: '^(<|"(gtest|isl|json)/)'
