@@ -259,6 +259,6 @@ for_window [instance="zeal"] floating enable
 for_window [instance="stardict"] floating enable
 for_window [instance="goldendict"] floating enable
 for_window [instance="speedcrunch"] floating enable
-for_window [instance="lxterminal"] floating enable
+for_window [instance="terminator"] floating enable
 for_window [instance="pcmanfm"] floating enable
 for_window [instance="flameshot"] floating enable
