@@ -223,7 +223,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Fira Code"
+   dotspacemacs-default-font '("Source Code Pro"
                                :size 16
                                :weight normal
                                :width normal)
@@ -485,6 +485,9 @@ before packages are loaded."
        :encryption tls
        :port "6697"
        :channels ("#ubuntu" "#ubuntu-cn" "#linuxba"))))
+
+  ;; chinese mono fonts 
+  (spacemacs//set-monospaced-font   "Source Code Pro" "WenQuanYi Micro Hei Mono" 16 20)
 
   ;; org-mod
   ;;define the refile targets
