@@ -238,6 +238,8 @@ set $mode_screen  可见区域(b) 选择区域(s) 选择窗口(w) exit(Esc)
 			bindsym --release w exec --no-startup-id scrot -bs,mode "default"
 			bindsym Escape mode "default"
 	}
+# 另一个截图软件
+bindsym Print exec --no-startup-id flameshot gui
 ## 快捷键
 # 浏览器
 bindsym $mod+Ctrl+j exec --no-startup-id zotero

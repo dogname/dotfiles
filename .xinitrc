@@ -60,5 +60,5 @@ fi
 #exec xterm -geometry 80x66+0+0 -name login
 numlockx &
 udiskie --tray --use-udisks2 &
-exec i3
+exec dbus-launch i3
 # exec startkde
