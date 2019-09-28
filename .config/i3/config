@@ -15,7 +15,7 @@ new_float none
 hide_edge_borders both
 # Autostart
 exec --no-startup-id fcitx-autostart
-# exec --no-startup-id stardict -h
+exec --no-startup-id goldendict
 exec_always --no-startup-id feh --bg-scale "/home/ticks/Pictures/bg4.jpg"
 exec_always --no-startup-id compton -b
 # Font for window titles. Will also be used by the bar unless a different font
